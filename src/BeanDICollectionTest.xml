@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="javaCollection" class="com.tutorialspring.SpringLearn.JavaCollection">
+        <property name="addressList">
+            <list>
+                <value>L_China</value>
+                <value>L_Beijing</value>
+                <value>L_Jinan</value>
+            </list>
+        </property>
+
+        <property name="addressSet">
+            <set>
+                <value>S_China</value>
+                <value>S_Beijing</value>
+                <value>S_Beijing</value>
+                <value>S_Jinan</value>
+            </set>
+        </property>
+
+        <property name="addressMap">
+            <map>
+                <entry key="1" value="M_China" />
+                <entry key="2" value="M_Beijing" />
+                <entry key="3" value="M_Jinan" />
+                <entry key="4" value="M_Jinan" />
+            </map>
+        </property>
+
+        <property name="addressProp">
+            <props>
+                <prop key="one">P_China</prop>
+                <prop key="two">P_Beijing</prop>
+                <prop key="Three">P_Jinan</prop>
+                <prop key="four">P_Jinan</prop>
+            </props>
+        </property>
+    </bean>
+
+
+</beans>
